@@ -1,0 +1,2 @@
+@import "../import_in_head_style/My_stylesheet_for_print.css" print;
+@import "../import_in_head_style/My_stylesheet_for_screen.css" screen;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;   
+        }
+        .navigation{
+            width: 15em;
+            height: 25em;
+            background-color: rgb(149, 181, 240);
+        }
+        .second{
+            background-color: rgb(16, 65, 156);
+            margin-bottom: .2em;
+        }
+        .second img{
+            width: 140px;  
+            display: block;
+            margin: 0px 1050px 
+        }
+        .footer{
+            background-color: rgb(16, 158, 194);
+        }
+        h3{
+            margin-top: .2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            </ul>
+        </div>
+    <div class="container2">
+        <div class="second">
+            <h3>Статья 1</h3>
+            <text>Размер блока:</text><br>
+            <text>Занимает всю доступную ширину</text><br>
+            <text>Должен присутствовать цвет фона</text><br>
+            <text>Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom</text>
+        </div>
+        <div class="second">
+            <h3>Статья 2</h3>
+            <text>Размер блока:</text><br>
+            <text>Занимает всю доступную ширину</text><br>
+            <text>Должен присутствовать цвет фона</text><br>
+            <text>Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.</text><br>
+            <img src="Нарисованные-котики-карандашом-картинки-001.jpg" alt="Cat" title="Cat">
+            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+        <div class="footer">
+            <text>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</text>
+        </div>
+</body>
+</html>

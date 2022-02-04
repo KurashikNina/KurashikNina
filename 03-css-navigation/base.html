@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body {
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .MenuLevel1 > li{
+            position:relative;
+            float:left;
+            width:140px;
+            box-shadow:inset 0px 1px 3px 0px #91b8b3;
+            background-color:rgb(228, 225, 225);
+            border-radius:5px;
+            border:1px solid #566963;
+            cursor:pointer;
+            color:grey;
+            padding: 5px;
+            font-size:20px;
+        }
+        .MenuLevel1 > li:hover {
+	        background-color:grey;
+            color:rgb(228, 225, 225);
+        }
+        .MenuLevel2{
+            display:none;
+        }
+        .MenuLevel2 > li{
+            width:140px;
+            box-shadow:inset 0px 1px 3px 0px #91b8b3;
+            background-color:rgb(228, 225, 225);
+            border-radius:5px;
+            border:1px solid #566963;
+            cursor:pointer;
+            color:grey;
+            padding: 5px;
+            font-size:20px;
+            margin-left: -6px;
+        }
+        .MenuLevel1 > li:hover .MenuLevel2{
+            display: block; position: absolute; 
+        }
+        @media all and (max-device-width:840px){
+            .MenuLevel1 > li{
+                float:none;
+            } 
+            .MenuLevel1 > li:hover .MenuLevel2{
+                left:100%;
+                margin-top:-30px;
+                margin-left:7px
+            }
+            .MenuLevel1 > li:hover .MenuLevel2 li:nth-child(2n){
+                left:100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class='MenuLevel1'>
+        <li>
+            Понедельник
+            <ul class='MenuLevel2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Вторник
+            <ul class='MenuLevel2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Среда
+            <ul class='MenuLevel2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Четверг
+            <ul class='MenuLevel2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Пятница
+            <ul class='MenuLevel2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Суббота
+            <ul class='MenuLevel2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
